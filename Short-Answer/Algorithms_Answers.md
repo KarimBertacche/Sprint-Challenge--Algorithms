@@ -10,4 +10,14 @@ c) O(1) as there is no invokation for the actual function which means that it wi
 
 ## Exercise II
 
+# start from middle of the building 
+    base = 0
+    mid = n // 2
+    top = n
+    broken_egg = true
+# iterate over length of `n` while egg keeps breaking
+    # throw egg, if egg breaks, make `n` = mid
+    # else cut bottom half by making base = mid
+    # repeat process for next iteration till egg stops breaking
 
+I assume that this process that follow a typical binary search pattern is the best solution in this case as at each iteration the number of floors will be halved till the egg breaks no more, therefore following a O(log n) time complexity even in the worst case scenario
